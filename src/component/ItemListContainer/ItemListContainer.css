@@ -1,0 +1,33 @@
+/* Estilos generales que se aplicarán en todas las pantallas */
+.greeting {
+    /* Estilos comunes para todos los tamaños de pantalla */
+    width: 100%;
+    padding-top: 0%;
+    margin-top: 0%;
+   
+    
+  }
+  
+  /* Media query para pantallas pequeñas (hasta 600px) */
+  @media screen and (max-width: 600px) {
+    .greeting {
+      padding-top: 15%;
+      position: relative;
+      padding-left: 3%;
+      
+    }
+  }
+  
+  /* Media query para pantallas medianas (601px a 900px) */
+  /* Media query para tabletas y escritorios (más de 600px) */
+@media screen and (min-width: 601px) {
+
+
+    .greeting {
+      padding-top: 28%;
+      padding-left: 6%;
+      
+      justify-items: right; /* Alinea al extremo derecho */
+      
+    }
+}
