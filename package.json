@@ -1,6 +1,7 @@
 {
   "name": "coder_mavart",
   "private": true,
+  "homepage": "https://mavart2.github.io/CreaTuLandingVargas/build",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
