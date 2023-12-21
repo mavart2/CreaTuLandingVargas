@@ -1,14 +1,14 @@
 {
   "name": "coder_mavart",
   "private": true,
-  "homepage": "https://mavart2.github.io/CreaTuLanding_Vargas/",
+  "homepage": "https://mavart2.github.io/CreaTuLandingVargas/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
     "dev": "vite",
-    "build": "tsc && vite build --base=/CreaTuLanding_Vargas/",
+    "build": "vite build --base=/CreaTuLandingVargas/",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
