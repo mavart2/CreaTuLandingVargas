@@ -14,7 +14,7 @@ function App() {
       
 
       <div className="greet">
-        <ItemListContainer greeting="Hello comisión 57905" />
+        <ItemListContainer greeting="Hola comisión 57905" />
       </div>
       <div className="intro" style={{ paddingLeft: '15px' }}>
         <h2>{intro}</h2>
