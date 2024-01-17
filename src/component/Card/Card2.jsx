@@ -12,22 +12,12 @@ const Card = ({Children}) => {
   useEffect (
     ()=> {
       console.log('Saludo actualizado');
-      if (count === 3){
-        alert('Agrega uno mas y tienes 20% de dcto.')
-      }
     },[count]);
 
   const sumar = () => {
-    // Establece el límite máximo
-  const limiteMaximo = 10;
-
-  // Verifica si la suma no supera el límite
-  if (count < limiteMaximo) {
     setCount(count + 1);
     setFyh(new Date());
-  }
   };
-  
   const restar = () => {
     if (count > 1) {
       setCount(count - 1);
@@ -46,7 +36,7 @@ const Card = ({Children}) => {
   };
 
   return (
-    <div className="container">
+    <div className="container2">
       
       <div className="card">
         <img src="/src/assets/image/zapato-daheli-negro.jpeg" alt="Producto" />
@@ -59,30 +49,8 @@ const Card = ({Children}) => {
           <Button label={"-"} color={""} callback={restar} />
           <p>{count}</p>
           <Button label={"+"} color={""} callback={sumar} />
-          
         </div>
-        
       </div>
-
-      <div className="card">
-        <img src="/src/assets/image/zapato-daheli-negro.jpeg" alt="Producto" />
-        <h2>ZAPATOS AT</h2>
-        <p>Model fem neutral</p>
-        <p>{fyh.toLocaleString()}</p>
-        <h4>{totalPrice}</h4>
-
-        <div className="contador">
-          <Button label={"-"} color={""} callback={restar} />
-          <p>{count}</p>
-          <Button label={"+"} color={""} callback={sumar}  />
-        </div>
-          
-
-      </div>
-
-      
-
-      
       
     </div>
   );

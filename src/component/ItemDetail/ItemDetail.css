@@ -1,0 +1,14 @@
+.contador {
+    display: flex;
+    align-items: center;
+
+
+}
+
+.contador p {
+    width: 50px;
+    margin: 2px;
+    font-size: 13pt;
+    padding-left: 9%;
+
+}

@@ -1,3 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.card-up{
+  width: 80%;
+  height: 92%;
+  position: grid;
+  margin-top: 30%;
+  margin-left: 5%;
+  background-color: rgba(255,255,255,0.8);
+  box-shadow: 10px 0 20px #777;
+  z-index: -100;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
 /* Media query para pantallas pequeñas (hasta 600px) */
 @media screen and (max-width: 600px) {
 
@@ -33,17 +50,13 @@
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
-    -webkit-transform: rotate(0deg);
-    -moz-transform: rotate(0deg);
-    -ms-transform: rotate(0deg);
-    -o-transform: rotate(0deg);
 }
   to {
     transform: rotate(360deg);
-    -webkit-transform: rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
+    -webkit-transform:0;
+    moztransform:0;
+    -ms-transform:0;
+    -o-transform:0;
 }
 }
 
@@ -57,6 +70,7 @@
 .card {
   padding: 2em;
 }
+
 
 .read-the-docs {
   color: #888;

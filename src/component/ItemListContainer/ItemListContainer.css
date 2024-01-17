@@ -1,19 +1,34 @@
 /* Estilos generales que se aplicarán en todas las pantallas */
-.greeting {
+/* Estilo para el contenedor de los productos en modo flex */
+.item-list-container {
+  display: flex;
+  flex-wrap: wrap; /* Asegura que los productos se envuelvan en la siguiente línea si no hay suficiente espacio */
+  justify-content: space-evenly; /* Ajusta el espacio entre los productos */
+}
+
+/* Estilo para cada producto individual (puedes personalizar según tus necesidades) */
+.item {
+  margin: 10px;
+  /* Otros estilos... */
+}
+greeting {
     /* Estilos comunes para todos los tamaños de pantalla */
     width: 100%;
     padding-top: 0%;
     margin-top: 0%;
    
+   
     
   }
   
+  
   /* Media query para pantallas pequeñas (hasta 600px) */
   @media screen and (max-width: 600px) {
-    .greeting {
+    greeting {
       padding-top: 15%;
       position: relative;
       padding-left: 3%;
+      
       
     }
   }
@@ -23,7 +38,7 @@
 @media screen and (min-width: 601px) {
 
 
-    .greeting {
+    greeting {
       padding-top: 28%;
       padding-left: 6%;
       
