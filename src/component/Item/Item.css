@@ -25,3 +25,27 @@ h3{
   -ms-border-radius: 17px;
   -o-border-radius: 17px;
 }
+/* Agrega estos estilos a tu archivo de estilos Button.css o en el mismo archivo Item.css */
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: #3498db;
+  /*Colordefondodelbotón*/color: #fff;
+  /*Colordeltextodelbotón*/border: none;
+  border-radius: 4px;
+  /*Bordesredondeados*/transition: background-color 0.3s ease;
+   /* Efecto de transición en el color de fondo */
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2980b9; /* Cambia el color de fondo al pasar el ratón por encima */
+}

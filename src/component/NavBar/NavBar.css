@@ -3,15 +3,19 @@
      /*Fija la barra de navegación en la parte superior */
     top: 0;
     /* Coloca la barra de navegación en la parte superior de la ventana */
-    width: 100%;
-    /* Ancho del 100% */
-    
+    width: 100%;/* Ancho del 100% */
+   
     padding-top: 4px;
     background-color: #EBA2BA;
+    z-index: 3;
     /* Cambia el color de fondo según sea necesario */
     /* Agrega más estilos según tus preferencias 
-    z-index: 3;*/
+    */
 }
+.NavBar{
+    color: rgb(43, 226, 110);
+}
+
 
 .bg-body-tertiary{
     background-color: #EBA2BA;

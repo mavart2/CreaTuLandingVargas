@@ -4,7 +4,7 @@ const Button = ({label, callback, color}) => {
     
   return (
     <>
-    <button style={{backgroundColor:color}} onClick={()=> callback()}>{label}</button>
+    <button style={{backgroundColor:color}} className='w-36 rounded-lg border-dark border-slate-800' onClick={()=> callback()}>{label}</button>
     </>
 
     

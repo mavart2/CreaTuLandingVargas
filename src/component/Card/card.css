@@ -45,6 +45,11 @@
     width: 50px;
     margin: 2px;
 }
+.card Button2 {
+    border: 1px solid #047d2a;
+    width: 50px;
+    margin: 2px;
+}
 
 .card button:hover {
     border: 1px solid #ddd;

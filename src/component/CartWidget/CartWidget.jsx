@@ -1,13 +1,20 @@
-import React from 'react'
-import { BsCart4 } from "react-icons/bs";
+import React, { useContext } from 'react'
+import { GiShoppingCart } from "react-icons/gi";
 import "./CartWidget.css"
+import { CartContext } from '../context/CartContext';
+import { Link } from 'react-router-dom';
 
 const CartWidget = () => {
+  const {itemQuantity}= useContext(CartContext)
+
   return (
-    
-    <div className='resume'><BsCart4 />
-    <span>6</span></div>
-  )
+    <Link to='/cart'>
+    <div className='text-dark flex items-center'>
+      <GiShoppingCart className='text-2xl' />
+    <span>{itemQuantity()}</span>
+    </div>
+  </Link>
+  );
 }
 
 export default CartWidget

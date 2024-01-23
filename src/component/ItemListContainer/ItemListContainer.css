@@ -1,5 +1,6 @@
 /* Estilos generales que se aplicarán en todas las pantallas */
 /* Estilo para el contenedor de los productos en modo flex */
+
 .item-list-container {
   display: flex;
   flex-wrap: wrap; /* Asegura que los productos se envuelvan en la siguiente línea si no hay suficiente espacio */
