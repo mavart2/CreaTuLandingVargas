@@ -5,11 +5,15 @@ import { getProductos, getProductosBycategory } from "../../../asyncMock";
 import ItemList from "../ItemList/ItemList";
 import { useParams } from "react-router-dom";
 import context from "react-bootstrap/esm/AccordionContext";
-import { MyContext } from "../Context/MyContext";
+import { MyContext } from "../context/MyContext";
+import {collection, getDocs, query, where} from "firebase/firestore"
+import{db} from "../../services/firebaseConfig"
 
 const ItemListContainer = ({ greeting }) => {
   const [loading, setLoading] = useState([true]);
   const [productos, setProductos] = useState([]);
+
+  
 
   const { artist } = useContext(MyContext);
   //console.log(artist)
@@ -50,29 +54,61 @@ const ItemListContainer = ({ greeting }) => {
   // })
   const { category } = useParams();
 
-  useEffect(() => {
-    const fetchProductos = async () => {
-      try {
-        setLoading(true);
-        const result = category
-          ? await getProductosBycategory(category)
-          : await getProductos();
-        setProductos(result);
-      } catch (error) {
-        console.log("Error en el fetch de useEffect:", error);
-      } finally {
-        setLoading(false);
-      }
-    };
+  
 
-    fetchProductos();
+  useEffect(() => {
+    setLoading(true)
+    const productosRef = category
+  ? query(collection(db, 'productos'), where('category', '==',category))
+  : collection(db, 'productos')
+
+  getDocs(productosRef)
+  .then(snapshot=>{
+    const productosFormatted = snapshot.docs.map(doc=>{
+      const data = doc.data()
+      return {id: doc.id, ...data}
+      
+    })
+    setProductos(productosFormatted);
+  }).finally(()=>{
+    setLoading(false)
+
+  })
+
+
+    // const fetchProductos = async () => {
+    //   try {
+    //     setLoading(true);
+    //     const result = category
+    //       ? await getProductosBycategory(category)
+    //       : await getProductos();
+    //     setProductos(result);
+    //   } catch (error) {
+    //     console.log("Error en el fetch de useEffect:", error);
+    //   } finally {
+    //     setLoading(false);
+    //   }
+    // };
+
+    // fetchProductos();
   }, [category]);
 
   return (
     <>
-      <div className="w-full flex justify-center items-center text-3xl">
+      {/*<div className="w-full flex justify-center items-center text-3xl">
         {loading ? <div>CARGANDO...</div> : <ItemList productos={productos} />}
-      </div>
+      </div> */}
+      <div className=" w-full flex justify-center items-center text-3xl">
+  {loading ? (
+    <div className="loading-container pasaje pl-6">
+      
+      <img src="/src/assets/image/Spinner-1s-200px .gif" Name="loading-image" />
+      
+    </div>
+  ) : (
+    <ItemList productos={productos} />
+  )}
+</div>
     </>
   );
 };

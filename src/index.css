@@ -29,7 +29,7 @@ a:hover {
 }
 
 body {
-  background-image: url(./assets/image/manchas-acuarela-rosa-papel-textura-fondo-grunge-salpicado-texturizado-tarjetas-invitacion-plantillas-diseno_364465-1732.avif); 
+  background-image: url(./assets/image/vecteezy_watercolor-pastel-cloud-background_9360076.jpg); 
   margin: 0;
   background-size: 100% 100%;
   display: flex;
@@ -78,3 +78,15 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+  /* Media query para pantallas pequeñas (hasta 600px) */
+  @media screen and (max-width: 600px)  {
+    body {
+      
+      background-size: 100% 100%;
+      display: flex;
+      place-items: center;
+      
+    }
+
+  }

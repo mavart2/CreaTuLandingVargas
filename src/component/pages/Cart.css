@@ -1,20 +1,132 @@
+.base{
+    margin-top: 0%;
+    padding-top: 0px;
+    width: 100%;
+    
+}
+
 .title{
     margin-top: 40%;
     
     width: 100%;
     
 }
+.edicion{
+    display:flex;
+    align-items: center;
+    
+
+}
+.styled-input {
+    padding: 8px 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-shadow: none;
+    width: 70px;
+    box-sizing: border-box;
+    margin-bottom:6%;
+    margin-left: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+  
 .btn{
     display: inline-block;
     margin-bottom: 20%;
+    margin-left: 8px;
 }
 .sale{
-    padding-left: 20%;
+    display:flexbox;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 0%;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f9fa;
+    /*Colordefondo-puedesajustarsegúntupreferencia*/-webkit-border-radius: 8px;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+    -webkit-border-radius:;
 }
+.sale2{
+    padding: 0px;
+    margin: 20px;
+    margin-bottom: 0%;
+    
+}
+.sale2 button {
+    margin-bottom: 10px; /* Ajusta según sea necesario para reducir el espacio entre los botones */
+  }
+  
+  .sale2 a {
+    margin-top: 10px; /* Ajusta según sea necesario para reducir el espacio entre los botones */
+  }
+  
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    -webkit-border-radius:;
+    -moz-border-radius:;
+    -ms-border-radius:;
+    -o-border-radius:;
+}
+  
+ 
 .pic{
-    width: 150px;
+    width: 100%;
 }
 .hr{
     width:100%;
     border: 1pt;
 }
+
+/* Media query para pantallas pequeñas (hasta 600px) */
+@media screen and (max-width: 600px) {
+  
+    .base{
+      width: 100%;
+      margin-top: 0%;
+      padding-left: 0%;
+      
+    }
+    .sale{
+        width: 93%;
+        
+        
+       
+    }
+    .sale2{
+        padding: 0px;
+        margin: 20px;
+        
+        
+    }
+    .sale2 button {
+        margin-bottom: 2px; /* Ajusta según sea necesario para reducir el espacio entre los botones */
+      }
+      
+      .sale2 a {
+        margin-top: 2px; /* Ajusta según sea necesario para reducir el espacio entre los botones */
+      }
+      
+    
+    
+    
+  }

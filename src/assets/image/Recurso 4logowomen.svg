@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Capa_2" data-name="Capa 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 70.88 19.99">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #8a133d;
+        font-family: ArialMT, Arial;
+        font-size: 4px;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+
+      .cls-3 {
+        letter-spacing: -.04em;
+      }
+
+      .cls-4 {
+        letter-spacing: 0em;
+      }
+
+      .cls-5 {
+        fill: #8a143e;
+        font-family: Apple-Chancery, 'Apple Chancery';
+        font-size: 12px;
+      }
+
+      .cls-6 {
+        letter-spacing: -.01em;
+      }
+    </style>
+  </defs>
+  <g id="Capa_1-2" data-name="Capa 1">
+    <text class="cls-5" transform="translate(0 10.73)"><tspan class="cls-3" x="0" y="0">W</tspan><tspan x="10.34" y="0">omen&apos;s S</tspan><tspan class="cls-4" x="52.29" y="0">t</tspan><tspan x="56.45" y="0">o</tspan><tspan class="cls-6" x="61.59" y="0">r</tspan><tspan x="66.42" y="0">e</tspan></text>
+    <text class="cls-1" transform="translate(17.09 18.69)"><tspan x="0" y="0">BEAUT</tspan><tspan class="cls-2" x="13.34" y="0">Y</tspan><tspan x="15.93" y="0" xml:space="preserve">  CLOTHES </tspan></text>
+  </g>
+</svg>

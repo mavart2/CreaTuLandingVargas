@@ -1,3 +1,4 @@
+
 .NavBar {
     position: fixed;
      /*Fija la barra de navegación en la parte superior */
@@ -6,7 +7,7 @@
     width: 100%;/* Ancho del 100% */
    
     padding-top: 4px;
-    background-color: #EBA2BA;
+    background-color: rgba(240, 100, 147, 0.9);
     z-index: 3;
     /* Cambia el color de fondo según sea necesario */
     /* Agrega más estilos según tus preferencias 
@@ -18,5 +19,24 @@
 
 
 .bg-body-tertiary{
-    background-color: #EBA2BA;
+    background-color: rgb(235 162 186/0%) ;
 }
+.pl-2{
+    color:#8A143E;
+    font-family: Monserrat, Georgia, Times, 'Times New Roman', serif;
+    font-weight: medium;
+    font-size: 16px;
+    position: unset;
+    box-sizing: border-box;   
+    
+}
+.logo {
+    width: 200px;/*Anchodellogo*/
+    height: auto;/*Alturaautomáticaparamantenerlaproporción*/
+    margin-right: 10px;/*Margenderechoparasepararellogodeltexto*/
+    
+    margin-left: 0%;
+    
+    
+}
+  

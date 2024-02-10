@@ -19,13 +19,34 @@ export const CartContextProvider = ({children}) =>{
     const itemQuantity =()=>{
         return cart.reduce((acc, item)=>acc+item.cantidad, 0)
     }
+    const total = () =>{
+        return cart.reduce((acc, item)=>acc+item.cantidad*item.price, 0)
+    }
+    const emptyCart = ()=>{
+        setCart([])
+
+    }
+    const removeItem = (id)=>{
+        setCart(cart.filter((item)=>item.id!==id))
+
+    }
+    const updateQuantity = (id, quantity) => {
+        const updatedCart = cart.map((item) =>
+          item.id === id ? { ...item, cantidad: quantity } : item
+        );
+        setCart(updatedCart);
+      };
     return (
         <CartContext.Provider value={{
             cart,
             setCart,
             addToCart,
             isInCart,
-            itemQuantity
+            itemQuantity, 
+            total,
+            emptyCart,
+            removeItem,
+            updateQuantity
 
         }}>
         {children}

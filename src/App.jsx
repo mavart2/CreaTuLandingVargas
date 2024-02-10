@@ -5,12 +5,18 @@ import ItemListContainer from "./component/ItemListContainer/ItemListContainer";
 import NavBar from "./component/NavBar/NavBar";
 import "./AppNuevo.css"; // Importa el archivo CSS
 import PokeApi from "./component/ejemploApi/PokeApi";
-import { BrowserRouter, Routes, Route, Link} from "react-router-dom";
+import { BrowserRouter, Routes, Route} from "react-router-dom";
 import Home from "./component/Home/Home"
 import ItemDetailContainer from "./component/ItemDetailContainer/ItemDetailContainer";
-import { MyContext } from "./component/Context/MyContext";
+import { MyContext } from "./component/context/MyContext";
 import { CartContext , CartContextProvider} from "./component/context/CartContext";
 import Cart from "./component/pages/Cart";
+import Checkout from './component/pages/Checkout';
+import Admin from "./component/pages/Admin"; // Importa tu componente AdminComponent
+import FooterBar from "./component/Footer/FooterBar";
+
+
+
 
 
 
@@ -28,6 +34,8 @@ function App() {
       <CartContextProvider> 
     <BrowserRouter>
        <NavBar />
+       
+    
       
       <Routes>
       
@@ -35,23 +43,28 @@ function App() {
       <Route path="/category/:category" element={<ItemListContainer greeting="Hello comisión 57905" />}/>
       <Route path="/producto/:id" element={<ItemDetailContainer/>}/>
       <Route path="/cart" element={<Cart />}/>
+      <Route path="/checkout" element={<Checkout />}/>
+      
+      <Route path="/admin" element={<Admin/>} />
       </Routes>
+      
     </BrowserRouter>
+    
     </CartContextProvider>
+    
+    
+    
       <div>
-         
+          
   </div>
+ 
+      
       
       
  
       
-      
-      {/*<Card/>*/}
-      
-      
-      
-      
     </MyContext.Provider>
+    
 
   );
 }

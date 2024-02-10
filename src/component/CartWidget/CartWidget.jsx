@@ -11,7 +11,7 @@ const CartWidget = () => {
     <Link to='/cart'>
     <div className='text-dark flex items-center'>
       <GiShoppingCart className='text-2xl' />
-    <span>{itemQuantity()}</span>
+    <span>{parseInt(itemQuantity())}</span>
     </div>
   </Link>
   );

@@ -1,6 +1,38 @@
 /* Estilos generales que se aplicarán en todas las pantallas */
 /* Estilo para el contenedor de los productos en modo flex */
+.pasaje{
+  display: fleiner ;
+  text-align: center; /* Centra horizontalmente */
+}
+.loading-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.loading-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
 
+
+.loading-image {
+  width: 200px;
+  height: 200px;
+  animation: spin 1s infinite linear;
+  /*Nombredelaanimación,duración,repeticióneinterpolación*/-webkit-animation: spin 1s infinite linear;
+  -webkit-animation: spin 1s infinite linear;
+}
 .item-list-container {
   display: flex;
   flex-wrap: wrap; /* Asegura que los productos se envuelvan en la siguiente línea si no hay suficiente espacio */
@@ -12,20 +44,51 @@
   margin: 10px;
   /* Otros estilos... */
 }
-greeting {
+.greeting {
     /* Estilos comunes para todos los tamaños de pantalla */
     width: 100%;
     padding-top: 0%;
     margin-top: 0%;
+    background-color: blueviolet;
    
    
     
   }
+
+ 
+
+
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+}
+  to {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+}
+}
   
   
   /* Media query para pantallas pequeñas (hasta 600px) */
   @media screen and (max-width: 600px) {
-    greeting {
+    greeting {x;
+  justify-content: center;
+  align-items: center;
+  
+  
+  
+  
+}
+/* Estilos y animación para la imagen de carga */
+.loading-container{
       padding-top: 15%;
       position: relative;
       padding-left: 3%;
