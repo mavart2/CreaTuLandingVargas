@@ -10,10 +10,10 @@
   box-shadow: 10px 0 20px #777;
   z-index: -100;
   border-radius: 15px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  -ms-border-radius: 15px;
-  -o-border-radius: 15px;
+  -webkit-border-radius:;
+  -moz-border-radius:;
+  -ms-border-radius:;
+  -o-border-radius:;
 }
 /* Media query para pantallas pequeñas (hasta 600px) */
 @media screen and (max-width: 600px) {

@@ -14,6 +14,7 @@ import Cart from "./component/pages/Cart";
 import Checkout from './component/pages/Checkout';
 import Admin from "./component/pages/Admin"; // Importa tu componente AdminComponent
 import FooterBar from "./component/Footer/FooterBar";
+import NotFound404 from "./component/pages/NotFound404";
 
 
 
@@ -44,8 +45,8 @@ function App() {
       <Route path="/producto/:id" element={<ItemDetailContainer/>}/>
       <Route path="/cart" element={<Cart />}/>
       <Route path="/checkout" element={<Checkout />}/>
-      
       <Route path="/admin" element={<Admin/>} />
+      <Route path="*" element={<NotFound404 />} />
       </Routes>
       
     </BrowserRouter>

@@ -1,7 +1,7 @@
 import React, {useContext, useState } from 'react'
 import {CartContext } from '../context/CartContext'
 import { Button } from 'react-bootstrap'
-import "./Cart.css"; // Importa el archivo CSS
+import "./Checkout.css"; // Importa el archivo CSS
 
 const Checkout = () => {
     const {cart} = useContext(CartContext)
@@ -22,8 +22,8 @@ const Checkout = () => {
         })
     }
     return(
-        <div className='sale border-b border-b-black '>
-            <form onSubmit={handleSubmit}>
+        <div className=' sale3 bac border-b border-b-black '>
+            <form className='forma' onSubmit={handleSubmit}>
                 <input
                 type="text"
                 required
