@@ -10,7 +10,7 @@ lerna-debug.log*
 node_modules
 
 # Exclude dist from being ignored
-!dist
+dist
 
 dist-ssr
 *.local
