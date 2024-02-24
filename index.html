@@ -1,61 +1,53 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./src/index.css">
-    <title>Vite + React</title>
-    <style>
-      /* Estilos CSS */
-      body {
-        font-family: Arial, sans-serif;
-        margin: 0;
-        padding: 0;
-      }
-  
-      nav {
-        background-color: rgba(240, 100, 147, 0.9); /* Color de fondo del nav */
-  color: white; /* Color de texto del nav */
-  padding: 10px 20px; /* Relleno del nav */
-  width: 100%;
-  position:fixed;
-  bottom: 0; /* Lo coloca al fondo de la ventana del navegador */
-  left: 0; /* Lo coloca a la izquierda de la ventana del navegador */
-  right: 0; 
-  
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + React</title>
+  <style>
+    /* Estilos CSS */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-        
-      }
-  
-      nav ul {
-        list-style-type: none; /* Quita los puntos de la lista */
-        margin: 0;
-        padding: 0;
-        display: flex; /* Establece la visualización de la lista como flexbox */
-      }
-  
-      nav ul li {
-        margin-right: 10px; /* Espacio entre elementos de la lista */
-      }
-  
-      nav ul li a {
-        text-decoration: none; /* Quita la subrayado de los enlaces */
-        color: white; /* Color del texto de los enlaces */
-      }
-  
-      nav ul li a:hover {
-        text-decoration: underline; /* Subrayado al pasar el mouse sobre los enlaces */
-      }
-    </style>
+    nav {
+      background-color: rgba(240, 100, 147, 0.9); /* Color de fondo del nav */
+      color: white; /* Color de texto del nav */
+      padding: 10px 20px; /* Relleno del nav */
+      width: 100%;
+      position: fixed;
+      bottom: 0; /* Lo coloca al fondo de la ventana del navegador */
+      left: 0; /* Lo coloca a la izquierda de la ventana del navegador */
+      right: 0;
+    }
 
-  </head>
-  <body>
-    
-        
-    </div>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-    
-  </body>
+    nav ul {
+      list-style-type: none; /* Quita los puntos de la lista */
+      margin: 0;
+      padding: 0;
+      display: flex; /* Establece la visualización de la lista como flexbox */
+    }
+
+    nav ul li {
+      margin-right: 10px; /* Espacio entre elementos de la lista */
+    }
+
+    nav ul li a {
+      text-decoration: none; /* Quita la subrayado de los enlaces */
+      color: white; /* Color del texto de los enlaces */
+    }
+
+    nav ul li a:hover {
+      text-decoration: underline; /* Subrayado al pasar el mouse sobre los enlaces */
+    }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+  <script type="module" src="/@vite/client"></script>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
 </html>
